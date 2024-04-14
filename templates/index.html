@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Music Notation</title>
+    <!-- AudioContext shim for older browsers -->
+    <script type="text/javascript">
+        window.AudioContext = window.AudioContext || webkitAudioContext;
+    </script>
+    <!-- abcjs for rendering and playing music -->
+    <script src="https://cdn.jsdelivr.net/npm/abcjs@VERSION/dist/abcjs-basic-min.js"></script>
+    <!-- Your main JavaScript file for custom functionality -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="music-notation"></div> <!-- Container for the music notation -->
+    <button onclick="fetchAndRenderMusic()">Load Music</button>
+</body>
+</html>
